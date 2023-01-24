@@ -1,170 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-
+i<!DOCTYPE html>
+<html>
 <head>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap"
-          rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-          crossorigin="anonymous"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime&display=swap"
-          rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-     <title>Bootstrap</title>
-     <link rel="stylesheet" href="style.css">
-     <!-- <style>
-          
-     </style> -->
+  <title>snake game</title>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    border: 1px solid blue;
+  }
+  </style>
 </head>
-
 <body>
-     <header>
-          <div id="homePage">
-               <!-- start navigation bar -->
-               <nav class="navbar navbar-expand-lg navbar-light">
-                    <div id="logo">
-                         <div class="bg-light d-inline-block" id="logoImg">
-                              <img src="Bt-logo.png" alt="error" height="80rem" width="80rem">
-                         </div>
-                         <span>LOGONAME</span>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                         <ul class="navbar-nav">
-                              <li class="nav-item active">
-                                   <a class="nav-link text-white" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link text-white" href="#content">Features</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link text-white" href="#product">Product</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link text-white" href="#contactUs">Contact Us</a>
-                              </li>
-                         </ul>
-                    </div>
-               </nav>
-               <!-- end of navigation bar -->
-               <!-- tag line on home page -->
-               <p id="tagline"><span class="highlight">"</span>Lorem ipsum dolor sit amet<span
-                         class="highlight">"</span></p>
-               <button id="Register" class="btn btn-success">Register Now</button>
-          </div>
-     </header>
-     <!-- end of header -->
-     <!-- body content -->
-     <div class="bg-light">
-          <!-- move to top button -->
-          <div class="d-inline-block position-sticky" id="moveTop">
-               <a href="#homePage">
-                    <img src="arrow-down.png" height="50%" width="90%" alt="error">
-               </a>
-          </div>
-          <!-- end of top button -->
-          <!-- start of contents -->
-          <div id="content" class="container-fluid bg-light">
-               <div class="row">
-                    <div class="col">
-                         <img src="istockphoto.jpg" height="70%" width="90%" alt="error">
-                         <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, qui.</p>
-                    </div>
-                    <div class="col">
-                         <img src="pexels-photo.jpeg" height="70%" width="90%" alt="error">
-                         <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, qui.</p>
-                    </div>
-                    <div class="col">
-                         <img src="skyscrapers.jpg" height="70%" width="90%" alt="error">
-                         <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, qui.</p>
-                    </div>
-               </div>
-          </div>
-          <!-- end of content -->
-          <!-- products -->
-          <div id="product" class="container-fluid bg-secondary">
-               <p class="text-light text-center p-3">-----OUR PRODUCTS-----</p>
-               <div class="row  p-5 productDetail">
-                    <div class="col-5">
-                         <img src="drone.jpg" class="productImage" height="70%" width="90%" alt="error">
-                    </div>
-                    <div class="col-7 ">
-                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cumque autem magnam at id
-                              accusantium molestiae commodi distinctio ducimus quod rem est in ullam soluta, expedita
-                              voluptatibus corporis rerum repellendus doloribus totam eveniet a voluptatum, blanditiis
-                              accusamus! Omnis, accusamus veniam?</p>
-                    </div>
-               </div>
-               <hr>
-               <div class="row p-5 productDetail">
-                    <div class="col-7">
-                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cumque autem magnam at id
-                              accusantium molestiae commodi distinctio ducimus quod rem est in ullam soluta, expedita
-                              voluptatibus corporis rerum repellendus doloribus totam eveniet a voluptatum, blanditiis
-                              accusamus! Omnis, accusamus veniam?</p>
-                    </div>
-                    <div class="col-5">
-                         <img src="camera.jpg" class="productImage" height="70%" width="90%" alt="error">
-                    </div>
-               </div>
-               <hr>
-               <div class="row p-5 productDetail">
-                    <div class="col-5">
-                         <img src="watch.jpg" class="productImage" height="70%" width="90%" alt="error">
-                    </div>
-                    <div class="col-7 productDetail">
-                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cumque autem magnam at id
-                              accusantium molestiae commodi distinctio ducimus quod rem est in ullam soluta, expedita
-                              voluptatibus corporis rerum repellendus doloribus totam eveniet a voluptatum, blanditiis
-                              accusamus! Omnis, accusamus veniam?</p>
-                    </div>
-               </div>
-          </div>
-          <!-- end of product -->
-          <!-- contact us -->
-          <div class="container-fluid">
-               <div id="contactUs" class="row bg-dark p-5">
-                    <div class="col-4">
-                         <div id="logo">
-                              <div class="bg-light d-inline-block" id="logoImg">
-                                   <img src="Bt-logo.png" alt="error" height="80rem" width="80rem">
-                              </div>
-                              <span class="d-block">LOGONAME</span>
-                         </div>
-                    </div>
-                    <div class="col-4 text-light">
-                         <p>Contact US</p>
-                         <img src="mail2.png" alt="error">
-                         <address class="contact">abc.in@gmail.com</address>
-                         <img src="phone2.png" alt="error">
-                         <p class="contact">+91 85558 10001</p>
-                    </div>
-                    <div class="col-4 text-light">
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur doloremque aut
-                              eius commodi praesentium consequatur voluptatem non obcaecati asperiores, incidunt
-                              reprehenderit saepe quo repudiandae quas vero similique iure nobis?</p>
-                    </div>
-               </div>
-          </div>
-          <!-- end of contact us -->
-          <!-- footer -->
-          <footer class="bg-black text-light text-center">
-               All Right Reserved ©DSP
-          </footer>
-     </div>
-</body>
+<canvas width="400" height="400" id="game"></canvas>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
 
+var grid = 16;
+var count = 0;
+  
+var snake = {
+  x: 160,
+  y: 160,
+  
+  // snake velocity. moves one grid length every frame in either the x or y direction
+  dx: grid,
+  dy: 0,
+  
+  // keep track of all grids the snake body occupies
+  cells: [],
+  
+  // length of the snake. grows when eating an apple
+  maxCells: 4
+};
+var apple = {
+  x: 320,
+  y: 320
+};
+
+// get random whole numbers in a specific range
+// @see https://stackoverflow.com/a/1527820/2124254
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// game loop
+function loop() {
+  requestAnimationFrame(loop);
+
+  // slow game loop to 15 fps instead of 60 (60/15 = 4)
+  if (++count < 4) {
+    return;
+  }
+
+  count = 0;
+  context.clearRect(0,0,canvas.width,canvas.height);
+
+  // move snake by it's velocity
+  snake.x += snake.dx;
+  snake.y += snake.dy;
+
+  // wrap snake position horizontally on edge of screen
+  if (snake.x < 0) {
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {
+    snake.x = 0;
+  }
+  
+  // wrap snake position vertically on edge of screen
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+
+  // keep track of where snake has been. front of the array is always the head
+  snake.cells.unshift({x: snake.x, y: snake.y});
+
+  // remove cells as we move away from them
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
+
+  // draw apple
+
+
+  context.fillStyle = 'red';
+
+  context.fillRect(apple.x, apple.y, grid-1, grid-1);
+
+  // draw snake one cell at a time
+  context.fillStyle = 'white';
+  snake.cells.forEach(function(cell, index) {
+    
+    // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);  
+
+    // snake ate apple
+    if (cell.x === apple.x && cell.y === apple.y) {
+      snake.maxCells++;
+
+      // canvas is 400x400 which is 25x25 grids 
+      apple.x = getRandomInt(0, 25) * grid;
+      apple.y = getRandomInt(0, 25) * grid;
+    }
+
+    // check collision with all cells after this one (modified bubble sort)
+    for (var i = index + 1; i < snake.cells.length; i++) {
+      
+      // snake occupies same space as a body part. reset game
+      if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        snake.x = 160;
+        snake.y = 160;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+
+// listen to keyboard events to move the snake
+document.addEventListener('keydown', function(e) {
+  // prevent snake from backtracking on itself by checking that it's 
+  // not already moving on the same axis (pressing left while moving
+  // left won't do anything, and pressing right while moving left
+  // shouldn't let you collide with your own body)
+  
+  // left arrow key
+  if (e.which === 37 && snake.dx === 0) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  // up arrow key
+  else if (e.which === 38 && snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  // right arrow key
+  else if (e.which === 39 && snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  // down arrow key
+  else if (e.which === 40 && snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+});
+
+// start the game
+requestAnimationFrame(loop);
+</script>
+</body>
 </html>
